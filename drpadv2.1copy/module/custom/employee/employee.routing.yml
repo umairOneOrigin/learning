@@ -1,0 +1,23 @@
+employee.form:
+  path: '/form'
+  defaults:
+    _title: 'Registration Form - 1'
+    _form: '\Drupal\employee\Form\EmployeeForm'
+    # _controller: '\Drupal\employee\Controller\employeeController::createEmployee'
+  requirements:
+    _permission: 'access content'
+
+employee.block:
+  path: '/myblock'
+  defaults:
+    _title: 'Block Display'
+    _block: '\Drupal\employee\Plugin\Block\CustomBlock'
+  requirements:
+    _permission: 'access content'
+
+# employee.getEmployeeList:
+#   path: '/emplist'
+#   defaults:
+#     _controller: '\Drupal\employee\Controller\employeeController::getEmployeeList'
+#   requirements:
+#     _permission: 'access content'

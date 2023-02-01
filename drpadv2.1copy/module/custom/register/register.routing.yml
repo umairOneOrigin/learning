@@ -1,0 +1,23 @@
+register.form:
+  path: '/registration'
+  defaults:
+    _title: Registration Form
+    _form: '\Drupal\register\form\FormApp'
+  requirements:
+    _permission: 'access content'
+
+register.thankyou:
+  path: '/registration/thankyou'
+  defaults:
+    _title: 'Thank You Page'
+    _controller: '\Drupal\register\Controller\ThankyouController::successpage'
+  requirements:
+    _permission: 'access content'
+
+register.getdetails:
+  path: 'details'
+  defaults:
+    _title: 'Details Fetched'
+    _controller: '\Drupal\register\Controller\ThankyouController::getDetails'
+  requirements:
+    _permission: 'access content'

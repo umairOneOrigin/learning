@@ -1,0 +1,47 @@
+<?php 
+// use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+
+ function register_schema() {
+    $schema['students'] = array (
+        'description' => 'Storing values in Custom Table',
+        'fields' => array (
+            'id' => array (
+                'type' => 'serial',
+                'not null' => TRUE,
+                'description' => 'Primary Key: unique to identify this form data',
+            ),
+            'fname' => array (
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'defaults' => '',
+                'description' => 'First Name of a person'
+            ),
+            'sname' => array (
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'defaults' => '',
+                'description' => 'Second Name of a person'
+            ),
+            'gender' => array (
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'defaults' => '',
+                'description' => 'Gender of a person'
+            ),
+            'dob' => array (
+                'description' => 'Holds the date value',
+                'mysql_type' => 'date',
+                'not null' => TRUE,
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+ }

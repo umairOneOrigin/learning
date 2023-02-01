@@ -1,0 +1,51 @@
+{# {% for item in items %}
+    {{ item }}
+{% endfor %} #}
+{# {{ items }} #}
+{{ attach_library('mymodule/mymodule-style')}}
+
+{# <div class="row" style="">
+    {% for item in items %}
+        <div class="card" style="width: 20rem;text-align:center;">
+            
+            <div class="card-body"> 
+                <h5 class="card-title" id="nan">Name :{{ item.fname }} {{ item.sname }}</h5>
+                <h5 class="card-title">Gender: {{ item.gender }}</h5>
+                <h5 class="card-title">DOB: {{ item.dob }}</h5>
+            </div>
+            
+        </div>
+    {% endfor %}
+<div> #}
+
+
+{# <section class="bg-light pt-5 pb-5 shadow-sm">
+  <div class="container">
+    <div class="row">
+      {% for item in items %}
+      <!--ADD CLASSES HERE d-flex align-items-stretch-->
+      <div class="col-4 mb-3 d-flex ">
+        <div class="card">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title" id="nan">Name:{{ item.fname }} {{ item.sname }}</h5>
+            <h5 class="card-title">Gender: {{ item.gender }}</h5>
+            <h5 class="card-title">DOB: {{ item.dob }}</h5>
+          </div>
+        </div>
+      </div>
+       {% endfor %}
+</section> #}
+
+<div class="row">
+    {% for item in items %}
+  <div class="col-sm-4 mb-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Name:{{ item.fname }} {{ item.sname }}</h5>
+        <h5 class="card-title">Gender: {{ item.gender }}</h5>
+        <h5 class="card-title">DOB: {{ item.dob }}</h5>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

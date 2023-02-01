@@ -1,0 +1,19 @@
+<?php
+
+    function mymodule_theme(){
+        return array(
+            // 'formpage'=> array( 
+            //     'variables'=> array(
+            //         'items'=>[],
+            //         'title'=>'',
+            //     ),
+            //     'template' => 'page'
+            // ),
+            'form_page' => [
+                'variables' => [
+                    'items' => [],
+                ]
+            ]
+        );
+    }
+

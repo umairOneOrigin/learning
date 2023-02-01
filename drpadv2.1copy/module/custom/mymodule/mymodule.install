@@ -1,0 +1,41 @@
+<?php
+
+function mymodule_schema()
+{
+    $schema['formpage'] = array(
+        'description' => 'A table to store simple data',
+        'fields' => array(
+            'id' => array(
+                'description' => 'Holds the id value',
+                'type' => 'serial',
+                'unsigned' => TRUE,
+                'not null' => TRUE,
+            ),
+            'fname' => array(
+                'description' => 'Holds the fname value',
+                'type' => 'varchar',
+                'length' => '50',
+                'not null' => TRUE,
+            ),
+            'sname' => array(
+                'description' => 'Holds the sname value',
+                'type' => 'varchar',
+                'length' => '50',
+                'not null' => TRUE,
+            ),
+            'gender' => array(
+                'description' => 'Holds the gender value',
+                'type' => 'varchar',
+                'length' => '50',
+                'not null' => TRUE,
+            ),
+            'dob' => array(
+                'description' => 'Holds the date value',
+                'mysql_type' => 'date',
+                'not null' => TRUE,
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}
