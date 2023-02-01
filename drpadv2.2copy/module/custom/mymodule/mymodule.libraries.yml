@@ -1,0 +1,6 @@
+mymodule-style:
+  css:
+    theme:
+      css/bootstrap-theme.min.css: {}
+      css/bootstrap.min.css: {}
+      css/style.css: {}

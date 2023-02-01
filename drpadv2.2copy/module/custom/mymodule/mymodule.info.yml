@@ -1,0 +1,5 @@
+name: New Page
+type: module
+description: 'Module for implementing custom form and add to page'
+core_version_requirement: ^8.8 || ^9
+package: Example

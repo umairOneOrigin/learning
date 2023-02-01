@@ -1,0 +1,17 @@
+mymodule.content:
+  path: '/myform'
+  defaults:
+    # _controller: '\Drupal\mymodule\Controller\pageController:content'
+    _form: '\Drupal\mymodule\Form\PageForm'
+    _title: 'Registration Form - 2'
+  requirements:
+    _permission: 'access content'
+
+mymodule.page:
+  path: '/mydata'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\pageController:content'
+    # _form: '\Drupal\mymodule\Form\PageForm'
+    _title: 'Data Display!'
+  requirements:
+    _permission: 'access content'
